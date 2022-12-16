@@ -20,7 +20,32 @@ Then, access the repository's directory using your terminal.
 
 ---
 
-### **Step 3** - Link this repository to your current project
+### **Step 3** - Edit manifest.json
+
+Go to the manifest.json file and change the following values:
+- Vendor
+- Name
+- Version (If it's different than example)
+- Title 
+- Description
+
+```json
+{
+  "vendor": "CHANGE_ME",
+  "name": "CHANGE_ME",
+  "version": "0.0.1",
+  "title": "YOUR TITLE",
+  "description": "YOUR DESCRIPTION",
+  "builders": {
+    "react": "3.x",
+    "messages": "1.x",
+    "docs": "0.x",
+    "store": "0.x"
+  }
+}
+```
+
+### **Step 4** - Link this repository to your current project
 
 Then time has come to upload all the changes you made in your local files to the platform. For that, use the `vtex link` command. 
 
@@ -30,7 +55,7 @@ This will enable you to see the applied changes in real time, through the accoun
 
 ---
 
-### **Step 4** - Adding the app on your project
+### **Step 5** - Adding the app on your project
 
 1. Adding the app as a theme dependency in the `manifest.json` file;
 ```json
@@ -56,7 +81,7 @@ This will enable you to see the applied changes in real time, through the accoun
   } 
 }
 ```
-### **Step 5** -  Installing required apps
+### **Step 6** -  Installing required apps
 
 In order to use Store Framework and work on your store theme, it is needed to have both `vtex.store-sitemap` and `vtex.store` installed.
 
@@ -67,7 +92,7 @@ If they aren't, run the following command to install them:
 `vtex install vtex.store-sitemap vtex.store -f`
 
 ---
-### **Step 6** -  Check the app is connected
+### **Step 7** -  Check the app is connected
 
 By running `vtex list`,  you can verify if the app is linked. On your Linked Apps you must have 
 
